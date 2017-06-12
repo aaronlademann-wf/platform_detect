@@ -26,7 +26,7 @@ class Browser {
   }
 
   @visibleForTesting
-  clearVersion() => _version = null;
+  void clearVersion() => _version = null;
 
   static Browser UnknownBrowser = new Browser('Unknown', null, null);
 

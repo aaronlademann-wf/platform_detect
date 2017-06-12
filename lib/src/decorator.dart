@@ -60,7 +60,7 @@ final int nextVersion = browser.version.major + 1;
 @visibleForTesting
 const int decoratedNextVersionCount = 2;
 
-/// Utility fn that returns the CSS classes that are analogous to the [browser.version].
+/// Utility fn that returns the CSS classes that are analogous to the [Browser.version].
 @visibleForTesting
 String getBrowserVersionClasses() {
   var majorVersion = browser.version.major;
@@ -134,7 +134,7 @@ String getPlatformClasses(
 /// If you do not want [defaultFeatureCssClassDecorators] to be used,
 /// set [includeDefaults] to `false`.
 ///
-/// By default, [rootNode] is [document.documentElement].
+/// By default, [rootNode] is [HtmlDocument.documentElement].
 void decorateRootNodeWithPlatformClasses(
     {List<Feature> features,
     bool includeDefaults: true,

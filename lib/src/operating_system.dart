@@ -33,10 +33,10 @@ class OperatingSystem {
 
   static List<OperatingSystem> _knownSystems = [mac, windows, linux, unix];
 
-  get isLinux => this == linux;
-  get isMac => this == mac;
-  get isUnix => this == unix;
-  get isWindows => this == windows;
+  bool get isLinux => this == linux;
+  bool get isMac => this == mac;
+  bool get isUnix => this == unix;
+  bool get isWindows => this == windows;
 }
 
 OperatingSystem linux =

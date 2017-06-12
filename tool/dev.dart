@@ -1,6 +1,8 @@
+import 'dart:async';
+
 import 'package:dart_dev/dart_dev.dart' show dev, config;
 
-main(List<String> args) async {
+Future<Null> main(List<String> args) async {
   config.analyze.entryPoints = [
     'example/main.dart',
     'lib/platform_detect.dart',
@@ -13,7 +15,7 @@ main(List<String> args) async {
   ];
 
   config.format
-    ..directories = [
+    ..paths = [
       'example/',
       'lib/',
       'test/',

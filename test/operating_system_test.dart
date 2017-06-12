@@ -4,10 +4,10 @@ import 'package:test/test.dart';
 import 'package:platform_detect/src/navigator.dart';
 import 'package:platform_detect/src/operating_system.dart';
 
-final linux = new TestNavigator()..appVersion = 'Linux';
-final mac = new TestNavigator()..appVersion = 'Macintosh';
-final unix = new TestNavigator()..appVersion = 'X11';
-final windows = new TestNavigator()..appVersion = 'Windows';
+final TestNavigator linux = new TestNavigator()..appVersion = 'Linux';
+final TestNavigator mac = new TestNavigator()..appVersion = 'Macintosh';
+final TestNavigator unix = new TestNavigator()..appVersion = 'X11';
+final TestNavigator windows = new TestNavigator()..appVersion = 'Windows';
 
 void main() {
   group('operating system detects', () {

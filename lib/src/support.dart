@@ -30,9 +30,13 @@ class Feature {
   /// Whether the feature is supported by the current browser.
   final bool isSupported;
 
+  @override
   bool operator ==(dynamic other) => other is Feature && other.name == name;
 
-  Feature(this.name, this.isSupported);
+  @override
+  int get hashCode => name.hashCode;
+
+  Feature(this.name, this.isSupported); // ignore: avoid_positional_boolean_parameters
 
   /// Whether the browser supports [TouchEvent]s.
   ///
